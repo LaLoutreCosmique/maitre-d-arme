@@ -3,6 +3,7 @@ import asyncio
 from discord.ext.commands import Bot
 from discord.utils import get
 import time
+import os
 
 PREFIX = '!'
 
