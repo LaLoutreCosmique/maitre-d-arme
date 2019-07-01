@@ -4,7 +4,6 @@ from discord.ext.commands import Bot
 from discord.utils import get
 import time
 
-TOKEN = 'NTk0MjA0MTMzNDQ4NDgyODE2.XRZCVA.TCVXgu2cR_hA754OlEjR5ezP6Rc'
 PREFIX = '!'
 
 vbot = Bot(command_prefix=PREFIX)
@@ -232,4 +231,4 @@ async def on_reaction_remove(reaction, user):
         return
 
 
-vbot.run(TOKEN)
+vbot.run(os.environ['DISCORD_TOKEN'])
