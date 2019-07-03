@@ -13,6 +13,7 @@ vbot = Bot(command_prefix=PREFIX)
 @vbot.event
 async def on_ready():
     print(vbot.user.name, 'est en marche')
+    await vbot.change_presence(game=discord.Game(name="[#choix-des-armes] Pour définir vos armes", type=1))
 
 @vbot.command(pass_context=True)
 async def w(ctx):
