@@ -5,7 +5,7 @@ from discord.utils import get
 import time
 import os
 
-PREFIX = '!'
+PREFIX = '°'
 
 vbot = Bot(command_prefix=PREFIX)
 
